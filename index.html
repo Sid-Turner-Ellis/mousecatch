@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Mouse Catch</h1>
+    <h2 id="level">Level:1</h2>
+    <h4>Time survived: <span id= "time">00:00</span> </h4>
+    <div class="outout">
+        <img src="death.png" alt="">
+        <div class="outside">
+            <div class="inside" style = "right:85%;"></div>
+        </div>
+        <img src="medal.png" alt="">
+    </div>
+
+    <canvas id="myCanvas" width="500px" height="500px"></canvas>
+
+
+     <img src="mouse.png" width="100px" class="mouse">
+     <img src="cheese.png" width="100px" class="cheese">
+     <img src="trap.png" style = "display: none;" class ="trap">
+
+
+
+    <div class="modal" style="display: none;">
+        <div class="modalInner">
+            <h1>YOU LOST!</h1>
+            <p>Levels survived : <span id = levelSurvived></span></p>
+            <p>Time lasted : <span id="timeSurvived"></span> </p>
+            <p>Better luck next time!</p>
+            <h3>I CAN DO BETTER!</h3>
+        </div>
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
